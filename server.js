@@ -25,13 +25,13 @@ app.use(express.static('public'));
 
 // CONTROLLERS
 const artifactController = require('./controllers/artifact.js');
-app.use('/Artifact', artifactController);
+app.use('/artifact', artifactController);
 
-// const newController = require('./controllers/new.js');
-// app.use('/New', newController);
+const newController = require('./controllers/new.js');
+app.use('/new', newController);
 
-// const editController = require('./controllers/edit.js');
-// app.use('/Edit', editController);
+const editController = require('./controllers/edit.js');
+app.use('/edit', editController);
 
 
 // INDEX FOR HEROKU
