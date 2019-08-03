@@ -7,8 +7,10 @@ const artifactSchema = Schema({
     architect: String,
     year: Number,
     tags: Array,
-    history: String
-
+    history: String,
+    img: String,
+    img2: String,
+    img3: String
 });
 
 const Artifact = mongoose.model('Artifact', artifactSchema);
