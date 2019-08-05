@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 
 // MODELS
 const Artifact = require ('./models/artifact.js');
+const dataSeed = require('./models/seed.js')
 
 // MIDDLEWARE
 app.use(express.urlencoded({ extended: false }));
@@ -57,3 +58,10 @@ mongoose.connect(MONGODB_URI, {useNewUrlParser: true}, () => {
 app.listen(PORT, () => {
     console.log('listening on port', PORT);
 });  
+
+// Artifact.create(dataSeed,(err, data ) => {
+//     if (err) {
+//        console.log (err.message) 
+//     } console.log( "added provided product data" )
+// }
+// );

@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New</title>
+    <title><%= tag %></title>
     <% include ../../partials/head.ejs %>
 </head>
 <body>
-    <h1>new</h1>
+    <h1><%= tag %></h1>
+    <% for(let i=0; i < currentData.length; i++) { %>
+        <img src="<%= currentData[i].img%>"/>
+        <img src="<%= currentData[i].img2%>"/>
+        <img src="<%= currentData[i].img3%>"/>
+    <% } %>
+
+    
     
 </body>
 </html>

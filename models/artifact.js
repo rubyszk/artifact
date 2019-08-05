@@ -6,6 +6,7 @@ const artifactSchema = Schema({
     location: {type: String, require: true},
     architect: String,
     year: Number,
+    style: String,
     tags: Array,
     history: String,
     img: String,
