@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Poppins:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
 #enter {
     color: black;
     font-size: 20px;
     margin-left: 50px;
+    animation: fade3 ease 5s;
+}
+
+@keyframes fade3{
+    0% {
+      opacity:0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
 }
 
 #enter:hover {
@@ -23,32 +37,49 @@
 }
   
 .home h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+    animation: fadeIn ease 3s;
+}
 
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.home2 {
+    margin-left: 50px;
+}
+
+.home2 h1 {
+    animation: fade ease 4s;
+}
+
+@keyframes fade{
+    0% {
+      opacity:0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+}
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
+
+/* .add {
+    display: none;
+} */
+
 
 p {
     font-family: 'Lato', sans-serif;
@@ -68,13 +99,26 @@ li {
     font-family: 'Lato', sans-serif; 
 }
 
+.list {
+    color: gray;
+}
+
+
+
+.row {
+    margin: 0px 300px 0px 0px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
 a {
     font-family: 'Lato', sans-serif;
 }
 
 img {
     width: 400px;
-
     margin-top: 10px;
 }
 
