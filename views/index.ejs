@@ -9,33 +9,36 @@
 </head>
 <body>
     <div class="header">
-        <h1>Artifact is... 
-        <br></h1>
-        <input type="text" placeholder="Search">
+        <h1>Artifact is... </h1>
+            <form class="search" action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         <br>
         <br>
-        <a href="/new/add">
+        <a href="/artifact/new">
             <button class="button"> Add </button> 
         </a>
     </div>
-    <div class="nav">
-        <ul>
-            <li><a href="/artifact/midcentury">Mid Century</a></li>
-            <li><a href="/artifact/victorian">Victorian</a></li>
-            <li><a href="/artifact/bauhaus">Bauhaus</a></li>
-            <li><a href="/artifact/artdeco">Art Deco</a></li>
-            <li><a href="/artifact/gothic">Gothic</a></li>
-            <li><a href="/artifact/brutalist">Brutalist</a></li>
-            <li><a href="/artifact/modern">Modernist</a></li>
-            <li><a href="/artifact/renaissance">Renaissance</a></li>
-
-
-
-        </ul>
-
-
+    <div class="container">
+        <div class="row">
+                <ul class="col-sm">
+                    <li><a href="/artifact/tag/midcentury">Mid Century</a></li>
+                    <li><a href="/artifact/tag/victorian">Victorian</a></li>
+                    <li><a href="/artifact/tag/bauhaus">Bauhaus</a></li>
+                </ul>
+                <ul class="col-sm"> 
+                    <li><a href="/artifact/tag/artdeco">Art Deco</a></li>
+                    <li><a href="/artifact/tag/gothic">Gothic</a></li>
+                    <li><a href="/artifact/tag/brutalist">Brutalist</a></li>
+                </ul> 
+                <ul class="col-sm">   
+                    <li><a href="/artifact/tag/modern">Modernist</a></li>
+                    <li><a href="/artifact/tag/renaissance">Renaissance</a></li>
+                </ul>
+        </div>
     </div>
 
-    
+
 </body>
 </html>

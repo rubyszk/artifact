@@ -9,6 +9,28 @@
 </head>
 <body>
     <h1><%= data.name %></h1>
-    
+    <h2><%= data.location %></h2>
+    <h3><%= data.architect %>, <%= data.year %></h3>
+    <p><%= data.history %></p>
+    <img src="<%= data.img%>"/>
+    <img src="<%= data.img2%>"/>
+    <img src="<%= data.img3%>"/>
+    <br>
+    <br>
+    <a href="/index">
+        <button class="button"> Home </button> 
+    </a>
+
+    <a href="/artifact/<%= data.id %>/edit">
+        <button class="button"> Edit </button> 
+    </a>
+    <br>
+    <br>
+
+    <form class ="del" action="/artifact/id/<%=data.id; %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete"/>
+    </form>
+
+
 </body>
 </html>

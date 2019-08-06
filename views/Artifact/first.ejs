@@ -9,7 +9,8 @@
     
 </head>
 <body>
-    <h1><%= tag %></h1>
+    <h1><a class="tag" href="/index"> <%= tag %> </a></h1>
+
     <% for(let i=0; i < currentData.length; i++) { %>
         <a href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img%>"/></a>
         <a href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img2%>"/></a>

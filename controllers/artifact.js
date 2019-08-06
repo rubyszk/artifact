@@ -6,7 +6,6 @@ router.get('/tag/:tag', (req, res) => {
     const dataTag = req.params.tag;
     const id = req.params.id;
     Artifact.find({style: dataTag}, (error, data) => {
-        console.log('data: ',data)
         res.render('../views/artifact/first.ejs', {
             currentData: data,
             tag: req.params.tag,
@@ -31,11 +30,45 @@ router.get('/id/:id', (req, res) => {
 });
 
 router.get('/:id/edit', (req, res) => {
-    res.render('../views/edit/edit.ejs');
+    const dataId = req.params.id;
+    Artifact.findById(dataId, (error, data) => {
+        if (error) {
+            console.log(error)
+        } else {
+            res.render('../views/edit/edit.ejs', {
+                dataId: dataId,
+                data: data
+            })
+
+        }
+    })
 });
 
-// router.put('/:id/edit', (req, res) => {
-//     res.redirect('/:id');
-// });
+router.get('/new', (req, res) => {
+    res.render('../views/new/new.ejs');
+});
+
+router.post('/', (req, res) => {
+    Artifact.create(req.body, (error, newArtifact) => {
+        if (error) {
+            res.send(error)
+        } else {
+            res.redirect('/index')
+        }
+    })
+})
+
+router.delete('/id/:id', (req, res) => {
+    Artifact.findByIdAndRemove(req.params.id, (error, deletedArtifact) => {
+        if (error) {
+            console.log(error)
+        } else {
+            res.redirect('/index')
+        }
+    })
+})
+
+
+
 
 module.exports = router;

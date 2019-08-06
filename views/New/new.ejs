@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New</title>
+    <title>New Artifact</title>
     <% include ../../partials/head.ejs %>
 </head>
 <body>
-    <h1>new</h1>
+    <h1>New Artifact</h1>
+    <form action="/artifact" method="POST">
+        Building Name: <input type='text' name='name'/>
+        <br/>
+        Location: <input type='text' name='location'/>
+        <br/>
+        Architect: <input type='text' name='architect'/>
+        <br/>
+        Year: <input type='text' name='year'/>
+        <br/>
+        Style: <input type='text' name='style'/>
+        <br/>
+        Tags:  <input type='text' name='tags'/>
+        <br/>
+        History: <input type='text' name='history'/>
+        <br/>
+        Image One: <input type='text' name='img'/>
+        <br/>
+        Image Two: <input type='text' name='img2'/>
+        <br/>
+        Image Three: <input type='text' name='img3'/>
+        <br/>
+        <input type="submit" value="SUBMIT"/>
+    </form>
     
 </body>
 </html>
