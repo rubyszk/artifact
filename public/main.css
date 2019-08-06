@@ -76,9 +76,13 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .add {
-    display: none;
-} */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    max-width: 1005px;
+
+}
 
 
 p {
@@ -103,9 +107,11 @@ li {
     color: gray;
 }
 
+.thumbnail {
+    margin: 10px;
+}
 
-
-.row {
+#list {
     margin: 0px 300px 0px 0px;
 }
 
@@ -113,12 +119,21 @@ li {
     margin-left: 20px;
 }
 
+#photos {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: space-between;
+    max-width: 950px;
+}
+
+
 a {
     font-family: 'Lato', sans-serif;
 }
 
 img {
-    width: 400px;
+    width: 300px;
     margin-top: 10px;
 }
 
