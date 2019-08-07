@@ -8,18 +8,24 @@
     <% include ../../partials/head.ejs %>
 </head>
 <body>
-    <h1><%= data.name %></h1>
-    <h2><%= data.location %></h2>
-    <h3><%= data.architect %>, <%= data.year %></h3>
-    <p><%= data.history %></p>
-    <img src="<%= data.img%>"/>
-    <img src="<%= data.img2%>"/>
-    <img src="<%= data.img3%>"/>
-    <br>
-    <br>
-    <a href="/index">
-        <button class="button"> Home </button> 
-    </a>
+
+
+    <div class="navbar">
+        <a href="/index"><img id="back" src="https://img.icons8.com/small/50/000000/long-arrow-left.png"></a>
+        <a href="/index"> <img id="src" src="https://img.icons8.com/ios-filled/50/000000/search.png"> </a>
+    </div>
+
+<div class="main">
+
+        <h1><%= data.name %></h1>
+        <h2><%= data.location %></h2>
+        <h3><%= data.architect %>, <%= data.year %></h3>
+        <p><%= data.history %></p>
+        <img class="dataImg" src="<%= data.img%>"/>
+        <img class="dataImg" src="<%= data.img2%>"/>
+        <img class="dataImg" src="<%= data.img3%>"/>
+        <br>
+        <br>
 
     <a href="/artifact/<%= data.id %>/edit">
         <button class="button"> Edit </button> 
@@ -30,6 +36,8 @@
     <form class ="del" action="/artifact/id/<%=data.id; %>?_method=DELETE" method="POST">
         <input type="submit" value="Delete"/>
     </form>
+
+</div>
 
 
 </body>

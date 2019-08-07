@@ -9,12 +9,25 @@
     
 </head>
 <body>
-    <h1><a class="tag" href="/index"> <%= tag %> </a></h1>
 
+
+    <div class="navbar">
+            <a href="/index"><img id="back" src="https://img.icons8.com/small/50/000000/long-arrow-left.png"></a>
+            <a href="/index"> <img id="src" src="https://img.icons8.com/ios-filled/50/000000/search.png"> </a>
+    </div>
+
+    <div class="header">
+        <h1>Artifact is... 
+        <br> <%= tag %>. </h1>
+        <br>
+        <br>
+    </div>
     <% for(let i=0; i < currentData.length; i++) { %>
-        <a href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img%>"/></a>
-        <a href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img2%>"/></a>
-        <a href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img3%>"/></a>
+    <div class="show">
+        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img%>"/></a>
+        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img2%>"/></a>
+        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img3%>"/></a>
+    </div>
     <% } %>
 
     

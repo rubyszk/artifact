@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Poppins:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
+/* ENTER BUTTON */
+
 #enter {
     color: black;
     font-size: 20px;
@@ -21,7 +23,8 @@
 }
 
 #enter:hover {
-    color: brown;
+    color: blue;
+    text-decoration: none;
 }
 
 .arrow {
@@ -29,6 +32,8 @@
     padding-bottom: 10px;
     margin-left: 2px;
 }
+
+/* ANIMATION */
 
 .home {
     margin-top: 150px;
@@ -72,31 +77,36 @@
     }
 }
 
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-}
+
+/* NAVBAR */
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
     margin-top: 20px;
     max-width: 1005px;
+    justify-content: flex-end;
+}
+
+#src {
+    justify-content: flex-end;
+    width: 25px;
 
 }
 
+/* BACK */
 
-p {
-    font-family: 'Lato', sans-serif;
+.back {
+    display: flex;
+    margin-top: 30px;
 }
 
-.header {
-    margin: 50px;
+#back {
+    width: 30px;
+    margin-right: 885px;
 }
 
-.tag {
-    text-decoration: none;
-    color: black ;
-}
+
+/* INDEX NAV */
 
 li {
     list-style: none;
@@ -107,16 +117,34 @@ li {
     color: gray;
 }
 
-.thumbnail {
-    margin: 10px;
-}
 
 #list {
     margin: 0px 300px 0px 0px;
 }
 
+
+/* X */
+
+.header {
+    margin: 50px;
+}
+
+.tag {
+    text-decoration: none;
+    color: black ;
+}
+
+
 .container {
     margin-left: 20px;
+}
+
+
+
+/* INDEX PHOTOS */
+
+.thumbnail {
+    margin: 10px;
 }
 
 #photos {
@@ -127,6 +155,64 @@ li {
     max-width: 950px;
 }
 
+#photos2 {
+    margin-left: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: space-between;
+    max-width: 950px;
+}
+
+.img-responsive {
+    object-fit: cover;
+    height: 425px;
+}
+
+/* FIRST SHOW INDEX */
+
+.show {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.showImg {
+    margin-right: 10px;
+    object-fit: cover;
+    width: 300px;
+    height: 250px;
+}
+
+/* SHOW PAGE */
+
+.main {
+    margin: 50px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+
+}
+
+.dataImg {
+    object-fit: cover;
+    width: 300px;
+}
+
+
+/* Z */
 
 a {
     font-family: 'Lato', sans-serif;
@@ -144,4 +230,10 @@ img {
 
 body {
     margin: 10px;
+}
+
+/* MAIN */
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
