@@ -8,29 +8,56 @@
     <% include ../../partials/head.ejs %>
 </head>
 <body>
-    <h1>Edit</h1>
-    <form action="/edit/artifact/id/<%=data.id%>?_method=PUT" method="POST">
-        Building Name: <input type='text' name='name'/>
+        <div class="navbar">
+                <a href="/index"><img id="back" src="https://img.icons8.com/small/50/000000/long-arrow-left.png"></a>
+                <a href="/index"> <img id="src" src="https://img.icons8.com/ios-filled/50/000000/search.png"> </a>
+        </div>
+
+    <h1 class="editbtn">Edit</h1>
+    
+    <form class="editform" action="/edit/artifact/id/<%=data.id%>?_method=PUT" method="POST">
+        Building Name * 
+        <br>
+        <input type='text' name='name'/>
         <br/>
-        Location: <input type='text' name='location'/>
+        Location *
+        <br>
+        <input type='text' name='location'/>
         <br/>
-        Architect: <input type='text' name='architect'/>
+        Architect
+        <br>
+        <input type='text' name='architect'/>
         <br/>
-        Year: <input type='text' name='year'/>
+        Year
+        <br>
+        <input type='text' name='year'/>
         <br/>
-        Style: <input type='text' name='style'/>
+        Style
+        <br>
+        <input type='text' name='style'/>
         <br/>
-        Tags:  <input type='text' name='tags'/>
+        Tags
+        <br>
+         <input type='text' name='tags'/>
         <br/>
-        History: <input type='text' name='history'/>
+        History
+        <br>
+        <input type='text' name='history'/>
         <br/>
-        Image One: <input type='text' name='img'/>
+        Image One
+        <br>
+        <input type='text' name='img'/>
         <br/>
-        Image Two: <input type='text' name='img2'/>
+        Image Two
+        <br>
+        <input type='text' name='img2'/>
         <br/>
-        Image Three: <input type='text' name='img3'/>
+        Image Three
+        <br>
+        <input type='text' name='img3'/>
         <br/>
-        <input type="submit" value="SUBMIT"/>
+        <br>
+        <input type="submit" value="Submit"/>
     </form>
 
 

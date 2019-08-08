@@ -24,9 +24,9 @@
     </div>
     <% for(let i=0; i < currentData.length; i++) { %>
     <div class="show">
-        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img%>"/></a>
-        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img2%>"/></a>
-        <a class="showImg" href="/artifact/id/<%=currentData[i].id%>"><img src="<%= currentData[i].img3%>"/></a>
+        <a href="/artifact/id/<%=currentData[i].id%>"><img class="showImg" src="<%= currentData[i].img%>"/></a>
+        <a href="/artifact/id/<%=currentData[i].id%>"><img class="showImg" src="<%= currentData[i].img2%>"/></a>
+        <a href="/artifact/id/<%=currentData[i].id%>"><img class="showImg" src="<%= currentData[i].img3%>"/></a>
     </div>
     <% } %>
 

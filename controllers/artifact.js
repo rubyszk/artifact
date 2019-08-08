@@ -58,12 +58,24 @@ router.post('/', (req, res) => {
     })
 })
 
+
 router.delete('/id/:id', (req, res) => {
     Artifact.findByIdAndRemove(req.params.id, (error, deletedArtifact) => {
         if (error) {
             console.log(error)
         } else {
             res.redirect('/index')
+        }
+    })
+})
+
+router.get('/search?search=:search', (req, res) => {
+    Artifact.find({style: req.params.search}, (error, result) => {
+        console.log(result)
+        if (error) {
+            console.log(error)
+        } else {
+            res.send('eeee')
         }
     })
 })

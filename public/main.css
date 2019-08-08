@@ -23,7 +23,7 @@
 }
 
 #enter:hover {
-    color: blue;
+    color: #D65535;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@
 /* ANIMATION */
 
 .home {
-    margin-top: 150px;
+    margin-top: 125px;
     margin-left: 50px;
 
 }
@@ -156,7 +156,7 @@ li {
 }
 
 #photos2 {
-    margin-left: 0px;
+    margin-left: 25px;
     margin-top: 5px;
     display: flex;
     align-items: space-between;
@@ -179,7 +179,8 @@ li {
     margin-right: 10px;
     object-fit: cover;
     width: 300px;
-    height: 250px;
+    height: 425px;
+    
 }
 
 /* SHOW PAGE */
@@ -212,10 +213,16 @@ p {
 }
 
 
-/* Z */
+/* ETC */
 
 a {
     font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+a:hover {
+    color:#D65535;
+    text-decoration: none;
 }
 
 img {
@@ -228,12 +235,106 @@ img {
 
 }
 
-body {
-    margin: 10px;
-}
 
 /* MAIN */
 
-h1, h2, h3 {
+h1, h2, h3, h6 {
     font-family: 'Poppins', sans-serif;
+}
+
+/* NEW PAGE */
+
+.newart {
+    margin-left: 50px;
+    margin-top: 125px;
+}
+
+.newform {
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+/* EDIT PAGE */
+
+.editbtn {
+    margin-left: 50px;
+    margin-top: 125px; 
+}
+
+.editform {
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    font-family: 'Lato', sans-serif;
+    margin-top: 80px;
+    width: 100vw;
+    height: 67px;
+    background: #EDEEF2;
+}
+
+.ftlinks {
+    display: flex;
+    align-items: space-between;
+
+}
+
+.heart {
+    color: #D65535;
+}
+
+.heart:hover {
+    text-decoration: none;
+}
+
+.h6 {
+    color: black;
+    font-size: 24px;
+}
+
+.contact {
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+.links {
+    margin-left: 100px;
+    padding-top: 25px;
+}
+
+.about {
+    margin-left: 100px;
+    padding-top: 25px;
+
+}
+
+.copy {
+    margin-left: 320px;
+    padding-top: 25px;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 1080px) {
+    body {
+        margin-left: 125px;
+    }
+
+    footer {
+        margin-left: -125px;
+        width: 100vw;
+    }
+
+    .ftlinks {
+        margin-left: 125px;
+    }
+
 }
