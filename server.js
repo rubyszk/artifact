@@ -46,6 +46,12 @@ app.get('/index', (req, res) => {
     res.render('index.ejs');
 })
 
+// FOOTER
+app.get('/contact', (req, res) => {
+    res.render('/contact.ejs')
+})
+
+
 
 // MONGOOSE
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true}, () => {

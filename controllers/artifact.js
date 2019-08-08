@@ -69,7 +69,7 @@ router.delete('/id/:id', (req, res) => {
     })
 })
 
-router.get('/search?search=:search', (req, res) => {
+router.get('/search/:search', (req, res) => {
     Artifact.find({style: req.params.search}, (error, result) => {
         console.log(result)
         if (error) {
