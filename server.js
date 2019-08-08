@@ -47,8 +47,12 @@ app.get('/index', (req, res) => {
 })
 
 // FOOTER
-app.get('/contact', (req, res) => {
-    res.render('/contact.ejs')
+app.get('/links', (req, res) => {
+    res.render('links.ejs')
+})
+
+app.get('/about', (req, res) => {
+    res.render('about.ejs')
 })
 
 
