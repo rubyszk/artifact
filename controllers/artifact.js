@@ -20,7 +20,7 @@ router.get('/id/:id', (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.render('/artifact/show.ejs', {
+            res.render('artifact/show.ejs', {
                 dataId: dataId,
                 data: data
             })
@@ -35,7 +35,7 @@ router.get('/:id/edit', (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.render('/edit/edit.ejs', {
+            res.render('edit/edit.ejs', {
                 dataId: dataId,
                 data: data
             })
@@ -45,7 +45,7 @@ router.get('/:id/edit', (req, res) => {
 });
 
 router.get('/new', (req, res) => {
-    res.render('/new/new.ejs');
+    res.render('new/new.ejs');
 });
 
 router.post('/', (req, res) => {
