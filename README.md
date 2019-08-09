@@ -11,4 +11,6 @@ buildings and spaces around the world.
 * HTML 
 * Bootstrap / CSS
 * Javascript / EJS
+* Express
 * jQuery
+* MongoDB
