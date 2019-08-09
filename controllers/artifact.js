@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Artifact = require('../models/artifact.js');
-const seed = require('../models/seed');
 
 router.get('/tag/:tag', (req, res) => {
     const dataTag = req.params.tag;

@@ -67,9 +67,9 @@ app.listen(PORT, () => {
     console.log('listening on port', PORT);
 });  
 
-// Artifact.create(dataSeed,(err, data ) => {
-//     if (err) {
-//        console.log (err.message) 
-//     } console.log( "added provided product data" )
-// }
-// );
+Artifact.create(dataSeed,(err, data ) => {
+    if (err) {
+       console.log (err.message) 
+    } console.log( "added provided product data" )
+}
+);
