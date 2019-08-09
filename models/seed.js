@@ -54,7 +54,7 @@ const seedData = [{
     'style': 'artdeco',
     'tags': ['artdeco', 'detroit', 'michigan','usa'],
     'history': 'The Fisher Building is a landmark skyscraper located at 3011 West Grand Boulevard in the heart of the New Center area of Detroit, Michigan. The ornate 30-story building, completed in 1928, is one of the major works of architect Albert Kahn, and is designed in an Art Deco style, faced with limestone, granite, and several types of marble. The Fisher family financed the building with proceeds from the sale of Fisher Body to General Motors. It was designed to house office and retail space.',
-    'img': 'https://https://patch.com/img/cdn20/users/790386/20170403/032001/styles/raw/public/article_images/4634810509_d93c715d0c_o-1491247075-6375.jpg?width=705-prod.crainsdetroit.com/s3fs-public/NEWS_150329854_AR_-1_ZZEOCVVEJHWH.jpg',
+    'img': 'https://cdn.vox-cdn.com/thumbor/ooyupC95kbiJERFHeXSHFCp7V4U=/0x0:2911x4831/1200x0/filters:focal(0x0:2911x4831):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/8412615/Fisher_Building_87.jpg',
     'img2': 'https://cdn.archpaper.com/wp-content/uploads/2016/11/Interior_of_Fisher_Building_Detroit.jpg',
     'img3': 'https://media.npr.org/assets/img/2015/06/18/dsc_0297-edit-a1713bd05a541814eeff0400b04d56702e285775-s800-c85.jpg'
 },
@@ -147,6 +147,7 @@ const seedData = [{
     `,
     'img': 'https://miro.medium.com/max/4800/1*EeGCTlCbC6Ir3uwNADyS1g.jpeg',
     'img2': 'https://live.staticflickr.com/3735/11062574406_73ee6faed3_b.jpg',
+    'img3': 'https://lookup.london/wp-content/uploads/2017/07/Photo-17-07-2017-16-18-26-e1500375223184.jpg'
 },
 {
     'name': 'New House Gropius',
@@ -193,12 +194,11 @@ const seedData = [{
     'location': 'Paris, France',
     'year': 1345,
     'style': 'gothic',
-    'history': `Notre Dame is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral is consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture. Its pioneering use of the rib vault and flying buttress, its enormous and colourful rose windows, as well as the naturalism and abundance of its sculptural decoration set it apart from the earlier Romanesque style.[7] Major components that make Notre Dame stand out include one of the world's largest organs and its immense church bells.[8]
-
+    'history': `Notre Dame is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral is consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture. Its pioneering use of the rib vault and flying buttress, its enormous and colourful rose windows, as well as the naturalism and abundance of its sculptural decoration set it apart from the earlier Romanesque style.[7] Major components that make Notre Dame stand out include one of the world's largest organs and its immense church bells.
     The cathedral's construction was begun in 1160 under Bishop Maurice de Sully and was largely complete by 1260, though it was modified frequently in the following centuries. In the 1790s, Notre-Dame suffered desecration during the French Revolution; much of its religious imagery was damaged or destroyed. In the 19th century, the cathedral was the site of the coronation of Napoleon I and funerals of many Presidents of the Republic.`,
     'img': 'https://i.pinimg.com/originals/7a/1c/02/7a1c02cb4998076e0d8c094a3a514d8e.jpg',
     'img2': 'https://cdn.imgbin.com/16/0/20/imgbin-notre-dame-de-paris-reims-cathedral-chartres-cathedral-amiens-cathedral-gothic-architecture-cathedral-GUcVjfvDVDDu0gmFPqB1AcCjq.jpg',
-    'img3': '35d86bb8b/tumblr_pq1w3dmpwo1wnnx8p_1280.png',
+    'img3': 'https://dwzwq1zlgpr34rpg91aveun6-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Notre-Dame-1951x1150.jpg'
 }]
 
 module.exports = seedData;
