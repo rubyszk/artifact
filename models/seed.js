@@ -54,7 +54,7 @@ const seedData = [{
     'style': 'artdeco',
     'tags': ['artdeco', 'detroit', 'michigan','usa'],
     'history': 'The Fisher Building is a landmark skyscraper located at 3011 West Grand Boulevard in the heart of the New Center area of Detroit, Michigan. The ornate 30-story building, completed in 1928, is one of the major works of architect Albert Kahn, and is designed in an Art Deco style, faced with limestone, granite, and several types of marble. The Fisher family financed the building with proceeds from the sale of Fisher Body to General Motors. It was designed to house office and retail space.',
-    'img': 'https://s3-prod.crainsdetroit.com/s3fs-public/NEWS_150329854_AR_-1_ZZEOCVVEJHWH.jpg',
+    'img': 'https://https://patch.com/img/cdn20/users/790386/20170403/032001/styles/raw/public/article_images/4634810509_d93c715d0c_o-1491247075-6375.jpg?width=705-prod.crainsdetroit.com/s3fs-public/NEWS_150329854_AR_-1_ZZEOCVVEJHWH.jpg',
     'img2': 'https://cdn.archpaper.com/wp-content/uploads/2016/11/Interior_of_Fisher_Building_Detroit.jpg',
     'img3': 'https://media.npr.org/assets/img/2015/06/18/dsc_0297-edit-a1713bd05a541814eeff0400b04d56702e285775-s800-c85.jpg'
 },
@@ -117,9 +117,88 @@ const seedData = [{
     'img': 'https://media.timeout.com/images/103378019/image.jpg',
     'img2':'https://live.staticflickr.com/1568/26617438856_61f84268c3_b.jpg',
     'img3':'https://www.secondshelters.com/wp-content/uploads/2017/09/2fe300002f-102815-07062017-683x1024.jpg'
-}
+},
+{
+    'name': 'Natural History Museum of London',
+    'location': 'London, England',
+    'architect': 'Alfred Waterhouse',
+    'year': 1865,
+    'style': 'victorian',
+    'tags': ['victorian', 'london', 'england', 'museum'],
+    'history': `The Museum first opened its doors on 18 April 1881, but its origins stretch back to 1753 and the generous offer of a renowned doctor, Sir Hans Sloane. 
 
+    Sloane travelled the world treating royalty and members of high society, while fulfilling his passion for collecting natural history specimens and cultural artefacts along the way. 
+    
+    After his death in 1753, Sloane's will allowed Parliament to buy his extensive collection of more than 71,000 items for £20,000 - significantly less than its estimated value. 
+    
+    The government agreed to purchase Sloane’s collection and then built the British Museum so these items could be displayed to the public.
+    
+    In 1856 Sir Richard Owen - a brilliant natural scientist who came up with the name for dinosaurs - left his role as curator of the Hunterian Museum and took charge of the British Museum’s natural history collection.
+    
+    Unhappy with the lack of space for its ever-growing collection of natural history specimens, Owen convinced the British Museum's board of trustees that a separate building was needed to house these national treasures.
+    In 1864 Francis Fowke, the architect who designed the Royal Albert Hall and parts of the Victoria and Albert Museum, won a competition to design the Natural History Museum.
 
-]
+    When he unexpectedly died a year later, the relatively unknown Alfred Waterhouse took over and came up with a new plan for the South Kensington site.
+
+    Waterhouse used terracotta for the entire building as this material was more resistant to Victorian London's harsh climate.
+
+    The result is one of Britain’s most striking examples of Romanesque architecture, which is considered a work of art in its own right and has become one of London's most iconic landmarks.
+
+    `,
+    'img': 'https://miro.medium.com/max/4800/1*EeGCTlCbC6Ir3uwNADyS1g.jpeg',
+    'img2': 'https://live.staticflickr.com/3735/11062574406_73ee6faed3_b.jpg',
+},
+{
+    'name': 'New House Gropius',
+    'location': 'Dessau, Germany',
+    'architect': 'Bruno Fioretti Marquez',
+    'year': 2014,
+    'style': 'bauhaus',
+    'tags': ['bauhaus', 'homes', 'europe', 'germany'],
+    'history': 'The two destroyed buildings of the original Walter Gropius-designed Bauhaus site, House Gropius and House Moholy-Nagy, have been recreated – well, sort of. Florian Heilmeyer explores the complicated, contested history and issues around the reconstruction...or rather recreation...or better still, reinterpretion of two iconic architectural ghosts from the past.',
+    'img': 'http://www.uncubemagazine.com/sixcms/media.php/1323/140510-MHBD-BFM-030.jpg',
+    'img2': 'http://www.uncubemagazine.com/sixcms/media.php/1323/Bruno-Fioretti-Marquez-.-House-Gropius-Reconstruction-.-Dessau--%283%29.jpg',
+    'img3': 'http://www.uncubemagazine.com/sixcms/media.php/1323/Bruno-Fioretti-Marquez-.-House-Gropius-Reconstruction-.-Dessau--%285%29.jpg'
+},
+{
+    'name': 'The Morgan Library & Museum',
+    'location': 'New York City',
+    'architect': 'Renzo Piano & Charles Follen McKim',
+    'year': 1906,
+    'style': 'renaissance',
+    'tags': ['renaissance', 'nyc', 'america', 'library'],
+    'history': `Today, The Morgan Library & Museum is a complex of buildings of differing styles and periods covering half a city block. It began as an intimate palazzo-like structure designed by Charles Follen McKim to serve as the private library of financier Pierpont Morgan. "Mr. Morgan's library", as it became known, was built between 1902 and 1906 to the east of his New York residence at Madison Avenue and 36th Street.
+
+    In the years since the Morgan's incorporation as a public institution in 1924, there have been several additions to the original library building. As the collections grew, the Annex was added in 1928, on the site of Morgan's home. In 1988, the mid-nineteenth-century brownstone on Madison Avenue and 37th Street, where J. P. Morgan, Jr., lived was also added to the complex. A garden court was built in 1991 to unite all three buildings in the complex. A century after the completion of the McKim building, The Morgan Library & Museum unveiled the largest expansion and renovation in its history. The Renzo Piano design integrates the three landmark buildings with three intimately scaled new pavilions constructed of steel-and-glass panels to create an accessible, inviting setting.`,
+    
+    'img': 'https://media.cntraveler.com/photos/5a7741d04332805bf105f668/master/pass/Morgan-Library-and-Museum__2018_9.-East-Room-2.jpg',
+    'img2': 'https://i.ytimg.com/vi/JqWNb5vofOs/maxresdefault.jpg',
+    'img3': 'https://www.baruch.cuny.edu/nycdata/hidden_gems/images/morgan_library.jpg'
+
+},
+{
+    'name': 'Eames House',
+    'location': 'Los Angeles, CA',
+    'architect': 'Charles & Ray Eames',
+    'year': 1949,
+    'style': 'midcentury',
+    'tags': ['midcentury', 'eames', 'california'],
+    'history': 'The Eames House is a landmark of mid-20th century modern architecture located at 203 North Chautauqua Boulevard in the Pacific Palisades neighborhood of Los Angeles. It was constructed in 1949, by husband-and-wife design pioneers Charles and Ray Eames, to serve as their home and studio.',
+    'img': 'https://3uypwq47po4k1f9ovd3spwzn-wpengine.netdna-ssl.com/wp-content/uploads/rotator-sample-a.jpg',
+    'img2': 'https://anotherimg-dazedgroup.netdna-ssl.com/786/azure/another-prod/340/8/348610.jpg',
+    'img3': 'https://media.architecturaldigest.com/photos/5cb4b31baff84672f5559a31/master/w_1600%2Cc_limit/eamescmp18.jpg'
+},
+{
+    'name': 'Notre Dame de Paris',
+    'location': 'Paris, France',
+    'year': 1345,
+    'style': 'gothic',
+    'history': `Notre Dame is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral is consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture. Its pioneering use of the rib vault and flying buttress, its enormous and colourful rose windows, as well as the naturalism and abundance of its sculptural decoration set it apart from the earlier Romanesque style.[7] Major components that make Notre Dame stand out include one of the world's largest organs and its immense church bells.[8]
+
+    The cathedral's construction was begun in 1160 under Bishop Maurice de Sully and was largely complete by 1260, though it was modified frequently in the following centuries. In the 1790s, Notre-Dame suffered desecration during the French Revolution; much of its religious imagery was damaged or destroyed. In the 19th century, the cathedral was the site of the coronation of Napoleon I and funerals of many Presidents of the Republic.`,
+    'img': 'https://i.pinimg.com/originals/7a/1c/02/7a1c02cb4998076e0d8c094a3a514d8e.jpg',
+    'img2': 'https://cdn.imgbin.com/16/0/20/imgbin-notre-dame-de-paris-reims-cathedral-chartres-cathedral-amiens-cathedral-gothic-architecture-cathedral-GUcVjfvDVDDu0gmFPqB1AcCjq.jpg',
+    'img3': '35d86bb8b/tumblr_pq1w3dmpwo1wnnx8p_1280.png',
+}]
 
 module.exports = seedData;
