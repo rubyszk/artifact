@@ -6,7 +6,7 @@ router.get('/tag/:tag', (req, res) => {
     const dataTag = req.params.tag;
     const id = req.params.id;
     Artifact.find({style: dataTag}, (error, data) => {
-        res.render('../views/artifact/first.ejs', {
+        res.render('artifact/first.ejs', {
             currentData: data,
             tag: req.params.tag,
             id: id
@@ -20,7 +20,7 @@ router.get('/id/:id', (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.render('artifact/show.ejs', {
+            res.render('/artifact/show.ejs', {
                 dataId: dataId,
                 data: data
             })
@@ -35,7 +35,7 @@ router.get('/:id/edit', (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.render('../views/edit/edit.ejs', {
+            res.render('/edit/edit.ejs', {
                 dataId: dataId,
                 data: data
             })
@@ -45,7 +45,7 @@ router.get('/:id/edit', (req, res) => {
 });
 
 router.get('/new', (req, res) => {
-    res.render('../views/new/new.ejs');
+    res.render('/new/new.ejs');
 });
 
 router.post('/', (req, res) => {
