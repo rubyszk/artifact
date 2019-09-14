@@ -14,13 +14,6 @@ const dataSeed = require('./models/seed.js')
 // MIDDLEWARE
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
-app.use(
-	session({
-		secret: 'feedmeseymour',
-		resave: false,
-		saveUninitialized: false
-	})
-);
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -56,7 +49,6 @@ app.get('/about', (req, res) => {
 })
 
 
-
 // MONGOOSE
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true}, () => {
     console.log('connected to mongo');
@@ -70,6 +62,6 @@ app.listen(PORT, () => {
 // Artifact.create(dataSeed,(err, data ) => {
 //     if (err) {
 //        console.log (err.message) 
-//     } console.log( "added provided product data" )
+//     } console.log( "added provided data" )
 // }
 // );
